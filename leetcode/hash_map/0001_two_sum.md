@@ -18,8 +18,8 @@ For each integer we are looking for its complement that will sum up to the targe
 ---
 
 ## Approach
-- Create a hash map to store the seen integers and the indices they appear at.
-- Iterate through the array and check if each integer's complement has been seen.
+1. Create a hash map to store the seen integers and the indices they appear at.
+2. Iterate through the array and check if each integer's complement has been seen.
     - If yes return the complement's index and the current index as a solution
     - If not add the current integer to the hash map
 

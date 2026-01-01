@@ -45,5 +45,5 @@ Explain the invariant or reasoning that guarantees correctness.
 
 ---
 
-## Variations
-Related problems or extensions.
+## Alternative Solutions
+Equally valid approaches or optimizations to consider.
