@@ -2,8 +2,8 @@
 
 **Platform:** LeetCode
 **Difficulty:** Medium
-**Primary Pattern:** Greedy
-**Secondary Pattern:** Sorting
+**Primary Pattern:** Interval
+**Secondary Pattern:** Greedy, Sorting
 **Link:** https://leetcode.com/problems/merge-intervals/
 
 ---
