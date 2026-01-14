@@ -9,5 +9,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    # Optional local test
     s = Solution()
+    # test cases
+
+    print("All tests passed.")
