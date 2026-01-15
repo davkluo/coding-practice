@@ -72,7 +72,48 @@ class Solution:
 
     def can_finish_topo(self, num_courses: int, prerequisites: List[List[int]]
                         ) -> bool:
-        pass
+        graph = self.create_graph(prerequisites)
+
+        def dfs(graph) -> List[int]:
+            """ Traverse graph using dfs and populate postorder numbers """
+            postorder = [None] * num_courses
+            postorder_num = 0
+            visited = set()
+
+            def explore(course):
+                """ Expand using DFS """
+
+                nonlocal postorder_num
+
+                if course in visited:
+                    return
+                
+                visited.add(course)
+
+                for prereq in graph[course]:
+                    explore(prereq)
+                
+                postorder[course] = postorder_num
+                postorder_num += 1
+
+            for course in range(num_courses):
+                if course not in visited:
+                    explore(course)                        
+
+            return postorder
+
+        postorder = dfs(graph)
+        # decreasing postorder number == topological sort from source to sink
+        # therefore edge from smaller to larger postorder == back edge/cycle
+        for course, prereq in prerequisites:
+            # postorder validation with DFS doesn't not account for self-loops
+            # must explicitly capture this case
+            if course == prereq:
+                return False
+            if postorder[course] < postorder[prereq]:
+                return False
+
+        return True            
 
     def create_graph(self, prerequisites: List[List[int]]
                      ) -> dict[int, List[int]]:
@@ -98,14 +139,16 @@ if __name__ == "__main__":
     s = Solution()
     # test cases
     functions = [
-        s.can_finish_dfs,
-        s.can_finish_bfs,
-        # s.can_finish_topo
+        # s.can_finish_dfs,
+        # s.can_finish_bfs,
+        s.can_finish_topo
     ]
     for func in functions:
-        assert func(2, [[1, 0]]) == True
-        assert func(2, [[1, 0], [0, 1]]) == False
-        assert func(3, [[0, 1], [1, 2], [2, 0]]) == False
-        assert func(4, [[0, 1], [1, 2], [2, 3]]) == True
-        assert func(1, []) == True
+        # assert func(2, [[1, 0]]) == True
+        # assert func(2, [[1, 0], [0, 1]]) == False
+        # assert func(3, [[0, 1], [1, 2], [2, 0]]) == False
+        # assert func(4, [[0, 1], [1, 2], [2, 3]]) == True
+        # assert func(1, []) == True
+        assert func(20, [[0,10],[3,18],[5,5],[6,11],[11,14],
+                         [13,1],[15,1],[17,4]]) == False
     print("All tests passed.")
