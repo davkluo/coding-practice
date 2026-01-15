@@ -139,16 +139,16 @@ if __name__ == "__main__":
     s = Solution()
     # test cases
     functions = [
-        # s.can_finish_dfs,
-        # s.can_finish_bfs,
+        s.can_finish_dfs,
+        s.can_finish_bfs,
         s.can_finish_topo
     ]
     for func in functions:
-        # assert func(2, [[1, 0]]) == True
-        # assert func(2, [[1, 0], [0, 1]]) == False
-        # assert func(3, [[0, 1], [1, 2], [2, 0]]) == False
-        # assert func(4, [[0, 1], [1, 2], [2, 3]]) == True
-        # assert func(1, []) == True
+        assert func(2, [[1, 0]]) == True
+        assert func(2, [[1, 0], [0, 1]]) == False
+        assert func(3, [[0, 1], [1, 2], [2, 0]]) == False
+        assert func(4, [[0, 1], [1, 2], [2, 3]]) == True
+        assert func(1, []) == True
         assert func(20, [[0,10],[3,18],[5,5],[6,11],[11,14],
                          [13,1],[15,1],[17,4]]) == False
     print("All tests passed.")
