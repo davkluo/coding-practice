@@ -72,4 +72,4 @@ Given a 2D board and a word, find if the word exists in the grid. The word can b
 - Iterative DFS using a stack instead of recursion.
     - Break from loop when word is found, or set a flag variable
 - Iterative BFS using a queue, exploring a radius of the word length from each starting cell
-    - Break from loop when word is found, or set a flag variable, as above
+    - This is less of a backtracking approach and more of a level-order search.
