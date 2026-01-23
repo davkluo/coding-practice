@@ -1,49 +1,67 @@
-# <problem_number> – <problem_name>
+# 26 – Remove Duplicates from Sorted Array
 
-**Platform:**  
-**Difficulty:**  
-**Primary Pattern:**  
-**Link:**  
+**Platform:** LeetCode
+**Difficulty:** Easy
+**Primary Pattern:** Two Pointer
+**Link:** https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 ---
 
 ## Problem Summary
-One or two sentences describing the task.
+
+Given a sorted integer array, remove duplicates in-place and return the count of unique elements. The first k elements should contain the unique values in order.
 
 ---
 
 ## Key Insight
-What made this problem easier once understood?
+
+- Since the array is already sorted, duplicates are always adjacent.
+- Use a write pointer to track where the next unique element should go, and a read pointer to scan through the array.
 
 ---
 
 ## Approach
-Step-by-step logic of the chosen solution.
+
+1. Initialize two pointers: `swap_idx` (write position) at 0 and `i` (read position) at 0
+2. While `i` is within bounds:
+   - Store the current value
+   - Swap the current element to the write position and increment `swap_idx`
+   - Advance `i` past all duplicates of the current value
+3. Return `swap_idx` as the count of unique elements
 
 ---
 
 ## Why This Works
-Explain the invariant or reasoning that guarantees correctness.
+
+- The write pointer always points to the next available slot for a unique element.
+- Since the array is sorted, all duplicates of a value are consecutive, so we can skip them in a single inner loop.
+- Each unique element gets placed at the front in order, maintaining the relative ordering.
 
 ---
 
 ## Edge Cases
-- Empty input
-- Smallest valid input
-- Special constraints
+
+- Single element → return 1, array unchanged
+- All same elements → return 1, first element is the unique value
+- No duplicates → return full length, array unchanged
+- Negative numbers → handled the same way since array is sorted
 
 ---
 
 ## Time & Space Complexity
-- Time:
-- Space:
+
+- Time: O(n) — single pass through the array
+- Space: O(1) — only uses two pointers, modification is in-place
 
 ---
 
 ## Common Mistakes
-- What to watch out for next time
+
+- Off-by-one errors when checking bounds in the duplicate-skipping loop
+- Returning `i` instead of `swap_idx`
 
 ---
 
 ## Alternative Solutions
-Equally valid approaches or optimizations to consider.
+
+- **Simple overwrite**: Instead of swapping, just overwrite `nums[swap_idx] = nums[i]` since we don't need to preserve the original values after position `swap_idx`
