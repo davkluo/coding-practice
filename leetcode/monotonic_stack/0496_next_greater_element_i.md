@@ -69,3 +69,4 @@ Given two arrays `nums1` (a subset of `nums2`) and `nums2`, for each element in 
 - Iterate left to right through `nums2` for the same complexity
   - For every element, pop smaller elements from the stack until you find a greater one or the stack is empty.
   - For each of these smaller elements, record the current element as their next greater.
+  - For all remaining elements in the stack after processing, map them to -1.
