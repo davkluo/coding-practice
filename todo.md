@@ -4,7 +4,7 @@
 [X] 189 Rotate Array - Reverse trick / cyclic rotation
 [X] 169 Majority Element - Boyer–Moore Voting
 
-[] 567 Permutation in String - Fixed-size sliding window + frequency array
+[X] 567 Permutation in String - Fixed-size sliding window + frequency array
 [] 1493 Longest Subarray of 1's After Deleting One Element - Sliding window (at most 1 zero)
 [] 904 Fruit Into Baskets - Sliding window (at most 2 distinct)
 
