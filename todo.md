@@ -5,10 +5,10 @@
 [X] 169 Majority Element - Boyer–Moore Voting
 
 [X] 567 Permutation in String - Fixed-size sliding window + frequency array
-[] 1493 Longest Subarray of 1's After Deleting One Element - Sliding window (at most 1 zero)
-[] 904 Fruit Into Baskets - Sliding window (at most 2 distinct)
+[X] 1493 Longest Subarray of 1's After Deleting One Element - Sliding window (at most 1 zero)
+[X] 904 Fruit Into Baskets - Sliding window (at most 2 distinct)
 
-[] 303 Range Sum Query – Immutable - Prefix sum precomputation
+[X] 303 Range Sum Query – Immutable - Prefix sum precomputation
 [] 1094 Car Pooling - Difference array / sweep line
 
 [] 34 Find First and Last Position of Element in Sorted Array - Binary search boundaries
