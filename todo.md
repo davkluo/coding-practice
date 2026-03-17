@@ -9,7 +9,7 @@
 [X] 904 Fruit Into Baskets - Sliding window (at most 2 distinct)
 
 [X] 303 Range Sum Query – Immutable - Prefix sum precomputation
-[] 1094 Car Pooling - Difference array / sweep line
+[X] 1094 Car Pooling - Difference array / sweep line
 
 [] 34 Find First and Last Position of Element in Sorted Array - Binary search boundaries
 [] 81 Search in Rotated Sorted Array II - Binary search with duplicates
