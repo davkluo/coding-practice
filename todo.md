@@ -13,7 +13,7 @@
 
 [X] 34 Find First and Last Position of Element in Sorted Array - Binary search boundaries
 [X] 81 Search in Rotated Sorted Array II - Binary search with duplicates
-[] 875 Koko Eating Bananas - Binary search on answer
+[X] 875 Koko Eating Bananas - Binary search on answer
 
 [] 402 Remove K Digits - Monotonic stack
 [] 739 Daily Temperatures - Monotonic decreasing stack
