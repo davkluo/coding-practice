@@ -15,8 +15,8 @@
 [X] 81 Search in Rotated Sorted Array II - Binary search with duplicates
 [X] 875 Koko Eating Bananas - Binary search on answer
 
-[] 402 Remove K Digits - Monotonic stack
-[] 739 Daily Temperatures - Monotonic decreasing stack
+[X] 402 Remove K Digits - Monotonic stack
+[X] 739 Daily Temperatures - Monotonic decreasing stack
 [] 227 Basic Calculator II - Stack + parsing
 
 [] 105 Construct Binary Tree from Preorder and Inorder Traversal - Tree recursion + hashmap
