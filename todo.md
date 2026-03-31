@@ -20,7 +20,7 @@
 [X] 227 Basic Calculator II - Stack + parsing
 
 [X] 105 Construct Binary Tree from Preorder and Inorder Traversal - Tree recursion + hashmap
-[] 124 Binary Tree Maximum Path Sum - Tree DFS + global state
+[X] 124 Binary Tree Maximum Path Sum - Tree DFS + global state
 [] 1448 Count Good Nodes in Binary Tree - DFS with state propagation
 
 [] 785 Is Graph Bipartite? - BFS/DFS coloring
