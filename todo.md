@@ -21,7 +21,7 @@
 
 [X] 105 Construct Binary Tree from Preorder and Inorder Traversal - Tree recursion + hashmap
 [X] 124 Binary Tree Maximum Path Sum - Tree DFS + global state
-[] 1448 Count Good Nodes in Binary Tree - DFS with state propagation
+[X] 1448 Count Good Nodes in Binary Tree - DFS with state propagation
 
 [] 785 Is Graph Bipartite? - BFS/DFS coloring
 [] 743 Network Delay Time - Dijkstra (priority queue)
