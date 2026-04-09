@@ -24,7 +24,7 @@
 [X] 1448 Count Good Nodes in Binary Tree - DFS with state propagation
 
 [X] 785 Is Graph Bipartite? - BFS/DFS coloring
-[] 743 Network Delay Time - Dijkstra (priority queue)
+[X] 743 Network Delay Time - Dijkstra (priority queue)
 [] 323 Number of Connected Components in an Undirected Graph - DFS / Union-Find
 [] 721 Accounts Merge - Union-Find or Graph DFS
 
