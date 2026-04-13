@@ -3,6 +3,13 @@ from classes import TreeNode
 def compare_lists(list1, list2):
     return sorted(list1) == sorted(list2)
 
+def compare_nested_lists(list1, list2):
+    def normalize(x):
+        if isinstance(x, list):
+            return sorted(normalize(i) for i in x)
+        return x
+    return normalize(list1) == normalize(list2)
+
 def list_to_binary_tree(list):
     if not list:
         return None
