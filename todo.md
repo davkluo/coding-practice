@@ -25,8 +25,7 @@
 
 [X] 785 Is Graph Bipartite? - BFS/DFS coloring
 [X] 743 Network Delay Time - Dijkstra (priority queue)
-[] 323 Number of Connected Components in an Undirected Graph - DFS / Union-Find
-[] 721 Accounts Merge - Union-Find or Graph DFS
+[X] 721 Accounts Merge - Union-Find or Graph DFS
 
 [] 131 Palindrome Partitioning - Backtracking + pruning
 [] 40 Combination Sum II - Backtracking + duplicate handling
